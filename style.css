@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar {
+    display: none;
+}
+
+.logo {
+    width: 20%;
+}
