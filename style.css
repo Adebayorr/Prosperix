@@ -14,3 +14,92 @@ header {
 .logo {
     width: 20%;
 }
+
+.hero {
+    width: 100vw;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_heading {
+    font-family: "Inter", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3.8rem;
+}
+
+#hero_heading-green {
+    color: #008080;
+}
+
+p.hero_desc {
+    width: 100%;
+    align-self: flex-start;
+    margin-top: 2.1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+form {
+    width: 80%;
+    margin-top: 3rem;
+    /* height: 3rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_wrapper {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 0.65rem;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px 0px rgba(11, 11, 11, 0.08);
+    border-radius: 0.25rem 0 0 0.25rem;
+
+}
+.input_wrapper > input {
+    border: none;
+    font-family: "Inter", sans-serif;
+    
+}
+.input_wrapper > input::placeholder {
+    border: none;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.hero_input-icon {
+    width: 20px;
+}
+
+.hero_btn {
+    appearance: none;
+    border: none;
+    width: 37%;
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+    background-color: #008080;
+    color: #fff;
+    border-radius:0 0.25rem 0.25rem 0;
+    font-family: "Inter", sans-serif;
+}
+
+.hero_image {
+    display: none;
+    width: 80vw;
+}
