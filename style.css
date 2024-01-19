@@ -45,9 +45,9 @@ header {
 }
 
 .hero_heading {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
-    line-height: 3.8rem;
+    line-height: 2.8rem;
 }
 
 #hero_heading-green {
@@ -57,15 +57,15 @@ header {
 p.hero_desc {
     width: 100%;
     align-self: flex-start;
-    margin-top: 2.1rem;
-    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 
 form {
-    width: 85%;
-    margin-top: 3rem;
+    width: 100%;
+    margin-top: 1.5rem;
     /* height: 3rem; */
     display: flex;
     justify-content: space-between;
@@ -116,11 +116,13 @@ input:active, input:focus {
     /* display: none; */
     margin-top: 3.5rem;
     width: 400px;
+    height: 300px;
 }
 
 .authority {
     width: 100%;
 }
+
 
 .companies {
     display: flex;
@@ -132,3 +134,69 @@ input:active, input:focus {
     height: 5rem;
 }
 
+
+.expertise {
+    padding: 1rem;
+}
+
+
+.title_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.title {
+    background-color: #20CFC614;
+    padding: 0.25rem;
+    display: inline;
+    color: #008080;
+    font-family: "poppins";
+    font-size: 1.1rem;
+}
+.title_line {
+    width: 5rem;
+    height: 0.125rem;
+    background-color: #008080;
+}
+
+.expertise_text {
+    padding: 1rem;
+}
+
+.description {
+    /* text-align: center; */
+    margin: 0.8rem 0;
+    font-size: 0.9rem;
+}
+
+.section_heading {
+    margin: 1rem 0;
+    /* text-align: center; */
+    
+}
+
+.other_btn {
+    appearance: none;
+    border-radius: 0.25rem;
+    border: 2px solid #D5DDDD;
+    padding: 1rem 2rem;
+    background: #fff;
+    color: #1E1E1E;
+    font-weight: bold;
+}
+
+.section_image-wrapper {
+    margin: 1rem auto;
+    width: 80%;
+    height:300px;
+    background-color: #E0F8F8;
+    border-radius: 2.1875rem 0.25rem;
+    padding: 1rem;
+
+} 
+
+.section_image {
+    /* display: none; */
+    width: 80%;
+    margin: 0 auto;
+}
