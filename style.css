@@ -135,7 +135,7 @@ input:active, input:focus {
 }
 
 
-.expertise_section, .service_section {
+.expertise_section, .service_section, testimonial_section {
     padding: 1rem;
     margin: 1rem 0;;
 }
@@ -148,11 +148,13 @@ input:active, input:focus {
 }
 .title {
     background-color: #20CFC614;
-    padding: 0.25rem;
+    padding: 0.25rem 0.4rem;
+    border-radius: 0.25rem;
     display: inline;
     color: #008080;
     font-family: "poppins";
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 .title_line {
     width: 5rem;
@@ -160,7 +162,7 @@ input:active, input:focus {
     background-color: #008080;
 }
 
-.expertise_text {
+.section_text {
     padding: 1rem;
 }
 
