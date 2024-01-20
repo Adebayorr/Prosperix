@@ -135,7 +135,7 @@ input:active, input:focus {
 }
 
 
-.expertise_section, .service_section, testimonial_section {
+.expertise_section, .service_section, .testimonial_section {
     padding: 1rem;
     margin: 1rem 0;;
 }
@@ -162,7 +162,7 @@ input:active, input:focus {
     background-color: #008080;
 }
 
-.section_text {
+.section_text, .testimonials {
     padding: 1rem;
 }
 
@@ -250,4 +250,65 @@ input:active, input:focus {
 .service svg {
     width: 16px;
     height: 16px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 2.1875rem 0.25rem;
+    border: 3px solid #D5DDDD;
+    margin: 1rem 0;
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+
+.testimonial:nth-child(even) {
+    background-color: #008080;
+    border: none;
+    color: #fff;
+
+}
+
+.author_bio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author_image-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.author_image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.author_position {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.testimony {
+    margin: 2rem auto;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.quote {
+    font-size: 5rem;
+    font-family: "Proza Libre", sans-serif;
+    position: absolute;
+    bottom: -2.5rem;
+    right: 1.5rem;
 }
