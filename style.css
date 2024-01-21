@@ -299,6 +299,10 @@ input:active, input:focus {
     margin-top: 0.2rem;
 }
 
+.author_position.unique {
+    color: #E1E1E1;
+}
+
 .testimony {
     margin: 2rem auto;
     font-size: 0.9rem;
