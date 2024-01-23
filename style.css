@@ -63,7 +63,7 @@ p.hero_desc {
     line-height: 1.2rem;
 }
 
-form {
+.hero form {
     width: 100%;
     margin-top: 1.5rem;
     /* height: 3rem; */
@@ -100,18 +100,6 @@ input:active, input:focus {
     width: 18px;
 }
 
-.hero_btn {
-    appearance: none;
-    border: none;
-    width: 35%;
-    padding: 1rem 2rem;
-    font-size: 0.7rem;
-    background-color: #008080;
-    color: #fff;
-    border-radius:0 0.25rem 0.25rem 0;
-    cursor: pointer;
-}
-
 .hero_image {
     /* display: none; */
     margin-top: 3.5rem;
@@ -135,7 +123,7 @@ input:active, input:focus {
 }
 
 
-.expertise_section, .service_section, .testimonial_section, .gurantee_section {
+.expertise_section, .service_section, .testimonial_section, .gurantee_section{
     padding: 1rem;
     margin: 1rem 0;;
 }
@@ -317,6 +305,11 @@ input:active, input:focus {
     right: 1.5rem;
 }
 
+.gurantee_section {
+    padding: 2rem;
+    margin: 1rem 0;;
+}
+
 .guarantee {
     margin: 2rem 0;
     display: flex;
@@ -341,7 +334,84 @@ input:active, input:focus {
     width: 80%;
 } */
 
-.read_more {
+.read_more { 
     text-decoration: none;
     color: #008080;
+}
+
+.lead_form-section{
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.start_now {
+    color: #2CDFD5;
+    background: none;
+}
+
+.start_now + .start_now-line {
+    background-color: #2CDFD5;
+}
+
+.lead_form-wrapper {
+    background-color: #008080;
+    padding: 2rem;
+}
+
+.form_heading {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.lead_input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.lead_input-wrapper > input {
+   appearance: none;
+   outline: none;
+   border: none;
+   padding: 0.9rem;
+   border-radius: 0.25rem;
+   color: #7E7E7E;
+   font-weight: bold; 
+   width: 70%;
+}
+
+/* BUTTONS */
+
+.hero_btn, .lead_form-btn{
+    appearance: none;
+    border: none;
+    font-size: 0.7rem;
+    color: #fff;
+    cursor: pointer;
+}
+.hero_btn {
+    width: 35%;
+    background-color: #008080;
+    border-radius:0 0.25rem 0.25rem 0;
+    padding: 1rem 2rem;
+}
+
+.lead_form-btn{ 
+    border-radius: 0.25rem;
+    background-color: #20CFC6;
+    font-size: 0.8rem;
+    padding: 1rem;
+    width: 32%;
+}
+
+.lead_misc {
+    font-size: .7rem;
+}
+
+
+.lead_misc  span{
+    color: #20CFC6;
 }
