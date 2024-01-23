@@ -340,7 +340,7 @@ input:active, input:focus {
 }
 
 .lead_form-section{
-    margin: 1rem 0;
+    margin-top: 1rem;
     color: #fff;
 }
 
@@ -422,4 +422,50 @@ input:active, input:focus {
 
 footer {
     background-color: #008080;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.footer_text {
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.socios {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.socios a {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.footer_navs {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_nav h4 {
+    margin-bottom: 1rem;
+}
+
+.footer_link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.6rem 0;
 }
