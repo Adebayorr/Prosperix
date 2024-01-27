@@ -13,16 +13,83 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.navbar {
-    display: flex;
+
+.logo {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.logo svg, .mobile_nav-logo {
+    width: 7.3rem;
+    cursor: pointer;
+}
+
+.mobile_nav-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.menu_icon {
+    cursor: pointer;
+}
+
+/* @keyframes slideIn {
+    
+    0% {
+        margin: 0;
+    }
+
+    100% {
+       
+        display: none;
+        margin-left: -500px;
+    }
+} */
+
+nav {
+    display: none;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 75%;
     height: 100vh;
     position: absolute;
+    left: 0;
     top: 0;
-    right: 0;
     background: #fff;
+    /* animation: slideIn 0.5s ease ; */
+}
+
+@keyframes slideOut {
+    
+    0% {
+        display: flex;
+        margin-left: -500px;
+    }
+
+    100% {
+        margin: 0;
+    }
+}
+.nav_open {
+    display: flex;
+    animation: slideOut 0.5s ease;
+}
+
+.open .bottomline {
+    transform: rotate(45deg) translate(4px, -18px);
+}
+
+.open .middleline {
+    opacity: 0;
+}
+
+.open .topline {
+    transform: rotate(-45deg) translate(-12px, 10px);
+}
+
+.topline, .middleline, .bottomline {
+    transition: transform 0.3s ease;
 }
 
 .navlinks, .access_btns {
@@ -51,6 +118,7 @@ header {
 
 .navlinks a:hover{
     color: #20CFC6;
+    transition: 0.25s ease-in ;
 }
 
 .access_btns  {
@@ -68,19 +136,6 @@ header {
     border-radius: 0.25rem;
 }
 
-.logo {
-    padding-top: 5px;
-    cursor: pointer;
-}
-
-.logo svg {
-    width: 7.3rem;
-    cursor: pointer;
-}
-
-.menu_icon {
-    cursor: pointer;
-}
 
 .hero {
     width: 100%;
