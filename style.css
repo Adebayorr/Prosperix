@@ -3,6 +3,10 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    position: relative;
+}
 header {
     padding: 0.7rem 1rem;
     display: flex;
@@ -10,7 +14,58 @@ header {
     align-items: center;
 }
 .navbar {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+}
+
+.navlinks, .access_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+
+.navlinks {
+    
+}
+
+.navlinks li, .access_btns a {
+    margin: 0.5rem;
+    list-style: none;
+
+
+}
+
+.navlinks a, .access_btns a{
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+.navlinks a:hover{
+    color: #20CFC6;
+}
+
+.access_btns  {
+    margin-top: 2rem;
+}
+
+.access_btns a {
+    color: #20CFC6;
+}
+
+.access_btns a.primary-btn {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #008080;
+    border-radius: 0.25rem;
 }
 
 .logo {
