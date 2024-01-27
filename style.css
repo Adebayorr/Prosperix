@@ -3,14 +3,15 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    position: relative;
+}
 header {
     padding: 0.7rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navbar {
-    display: none;
 }
 
 .logo {
@@ -18,14 +19,123 @@ header {
     cursor: pointer;
 }
 
-.logo svg {
+.logo svg, .mobile_nav-logo {
     width: 7.3rem;
     cursor: pointer;
+}
+
+.mobile_nav-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
 
 .menu_icon {
     cursor: pointer;
 }
+
+/* @keyframes slideIn {
+    
+    0% {
+        margin: 0;
+    }
+
+    100% {
+       
+        display: none;
+        margin-left: -500px;
+    }
+} */
+
+nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    /* animation: slideIn 0.5s ease ; */
+}
+
+@keyframes slideOut {
+    
+    0% {
+        display: flex;
+        margin-left: -500px;
+    }
+
+    100% {
+        margin: 0;
+    }
+}
+.nav_open {
+    display: flex;
+    animation: slideOut 0.5s ease;
+}
+
+.open .bottomline {
+    transform: rotate(45deg) translate(4px, -18px);
+}
+
+.open .middleline {
+    opacity: 0;
+}
+
+.open .topline {
+    transform: rotate(-45deg) translate(-12px, 10px);
+}
+
+.topline, .middleline, .bottomline {
+    transition: transform 0.3s ease;
+}
+
+.navlinks, .access_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+
+.navlinks {
+    
+}
+
+.navlinks li, .access_btns a {
+    margin: 0.5rem;
+    list-style: none;
+
+
+}
+
+.navlinks a, .access_btns a{
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+.navlinks a:hover{
+    color: #20CFC6;
+    transition: 0.25s ease-in ;
+}
+
+.access_btns  {
+    margin-top: 2rem;
+}
+
+.access_btns a {
+    color: #20CFC6;
+}
+
+.access_btns a.primary-btn {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #008080;
+    border-radius: 0.25rem;
+}
+
 
 .hero {
     width: 100%;
