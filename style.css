@@ -580,8 +580,11 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+    body {
+        padding: 0 6rem;
+    }
     header {
-        padding: 1rem 2.5rem;
+        padding: 1rem 0rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -613,6 +616,32 @@ footer {
     display: none;
 }
 
+.hero {
+    flex-direction: row;
+    gap: 4rem;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+}
 
+.hero_main, .hero_image {
+    width: 50%;
+    
+}
+.hero_main h1 {
+    text-align: left;
+    font-size: 3.8rem;
+    line-height: 4.2rem;
+}
+.hero_main p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 70%;
+}
+.hero_image {
+    margin: 0;
+    height: 90%;
+}
 }
 
